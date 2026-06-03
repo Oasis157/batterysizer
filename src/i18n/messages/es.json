@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "SolBatteryCalc",
+    "subtitle": "Calculadora de Almacenamiento de Energía"
+  },
+  "wizard": {
+    "step": "Paso",
+    "of": "de",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "calculate": "Calcular mi sistema",
+    "calculateNew": "Nuevo cálculo"
+  },
+  "scenario": {
+    "title": "¿Cuál es tu objetivo?",
+    "grid_backup": {
+      "title": "Respaldo de Red",
+      "desc": "Mantén tus dispositivos esenciales funcionando durante cortes de luz."
+    },
+    "off_grid": {
+      "title": "Vida Fuera de la Red",
+      "desc": "Independencia total. Solar + batería para todo."
+    },
+    "grid_tou": {
+      "title": "Ahorro en la Factura",
+      "desc": "Reduce tu factura. Batería se carga en horas baratas, alimenta la casa en horas caras."
+    }
+  },
+  "appliances": {
+    "title": "Selecciona tus electrodomésticos",
+    "subtitle": "Marca los que usas. Ajusta cantidades y horas de uso.",
+    "dailyUsage": "Consumo diario",
+    "monthlyUsage": "Consumo mensual",
+    "peakLoad": "Carga máxima (todos los dispositivos encendidos)",
+    "peakLoadTip": "Asume todos encendidos a la vez. Tu pico real puede ser menor.",
+    "hours": "h/día",
+    "quantity": "Cant",
+    "addCustom": "+ Electrodoméstico personalizado",
+    "customName": "Nombre",
+    "customPower": "Potencia (W)",
+    "customHours": "Horas/día"
+  },
+  "backup": {
+    "title": "Duración de respaldo",
+    "grid_backup": "¿Cuánto duran los cortes típicamente?",
+    "off_grid": "¿Días nublados/lluviosos consecutivos?",
+    "grid_tou": "¿Horas pico de electricidad por día?",
+    "hours": "horas"
+  },
+  "location": {
+    "title": "¿Dónde estás?",
+    "subtitle": "Usaremos tarifas locales y datos solares.",
+    "selectCountry": "Selecciona tu país",
+    "irradiance": "Radiación solar",
+    "currency": "Moneda",
+    "electricityPrice": "Precio electricidad",
+    "edit": "Editar",
+    "useDefault": "Usar valor ref.",
+    "dataSource": "Datos de referencia. Edite para su tarifa real. Tasas de cambio actualizadadas cada hora.",
+    "perKwh": "/kWh"
+  },
+  "solar": {
+    "title": "¿Tienes paneles solares?",
+    "noSolar": "No, todavía no",
+    "haveSolar": "Sí, tengo paneles",
+    "existingCapacity": "Capacidad solar existente (kW)"
+  },
+  "bill": {
+    "title": "Factura mensual (opcional)",
+    "subtitle": "Ayuda a calcular tus ahorros. Puedes saltarlo.",
+    "skip": "Saltar",
+    "enter": "Tu factura mensual",
+    "currency": "USD"
+  },
+  "results": {
+    "title": "Tu sistema recomendado",
+    "byUser": "Para",
+    "battery": "Batería",
+    "inverter": "Inversor",
+    "solar": "Solar PV",
+    "roi": "Retorno de inversión",
+    "usage": "Consumo",
+    "peakLoadNote": "Carga máxima:",
+    "installation": "Instalación (estimado)",
+    "totalPrice": "Costo total del sistema",
+    "annualSavings": "Ahorro anual",
+    "paybackPeriod": "Período de recuperación",
+    "year": "año",
+    "years": "años",
+    "tenYearSavings": "Ahorro neto a 10 años",
+    "billComparison": "Comparación de factura",
+    "currentBill": "Factura actual/mes",
+    "afterBill": "Después de solar+batería",
+    "seeProducts": "Ver productos en pack-e.com",
+    "getQuote": "Solicitar cotización",
+    "quotePlaceholder": "WhatsApp o email",
+    "quoteButton": "Enviarme cotización",
+    "quoteThanks": "¡Gracias! Te contactaremos pronto."
+  },
+  "usage": {
+    "monthlyLabel": "Consumo mensual de electricidad",
+    "peakLabel": "Carga máxima — potencia simultánea (kW)",
+    "typical": "hogares típicos",
+    "needHelp": "¿Ayuda?",
+    "hideGuide": "Ocultar guía",
+    "guideTitle": "Carga de electrodomésticos comunes:",
+    "guideAC": "Aire acond.: 1-2 kW",
+    "guideHeater": "Calentador: 2 kW",
+    "guideCooktop": "Cocina inducción: 2 kW",
+    "guideMicrowave": "Microondas: 0.8 kW",
+    "guideFridge": "Refrigerador: 0.15 kW",
+    "guideWashing": "Lavadora: 0.5 kW",
+    "guideExample": "Ejemplo: AA + refri + luces = ~2.3 kW"
+  },
+  "footer": {
+    "disclaimer": "Estimaciones de referencia. Verifica con un instalador calificado.",
+    "reference": "Referencia:",
+    "visit": "pack-e.com"
+  }
+}

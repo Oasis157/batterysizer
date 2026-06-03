@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "SolBatteryCalc",
+    "subtitle": "Calculateur de Stockage d'Énergie"
+  },
+  "wizard": {
+    "step": "Étape",
+    "of": "sur",
+    "next": "Suivant",
+    "back": "Retour",
+    "calculate": "Calculer mon système",
+    "calculateNew": "Nouveau calcul"
+  },
+  "scenario": {
+    "title": "Quel est votre objectif ?",
+    "grid_backup": {
+      "title": "Sauvegarde Réseau",
+      "desc": "Restez alimenté en cas de panne. La batterie couvre les charges essentielles."
+    },
+    "off_grid": {
+      "title": "Hors-Réseau",
+      "desc": "Indépendance totale. Solaire + batterie pour tous vos besoins."
+    },
+    "grid_tou": {
+      "title": "Économies sur la Facture",
+      "desc": "La batterie se charge aux heures creuses, alimente la maison aux heures chères."
+    }
+  },
+  "appliances": {
+    "title": "Sélectionnez vos appareils",
+    "subtitle": "Cochez les appareils que vous utilisez. Ajustez les quantités et la durée d'utilisation.",
+    "dailyUsage": "Consommation quotidienne",
+    "monthlyUsage": "Consommation mensuelle",
+    "peakLoad": "Puissance de pointe (tous les appareils allumés simultanément)",
+    "peakLoadTip": "Ceci suppose tous les appareils allumés en même temps. Votre pic réel pourrait être plus faible.",
+    "hours": "h/jour",
+    "quantity": "Qté",
+    "addCustom": "+ Appareil personnalisé",
+    "customName": "Nom de l'appareil",
+    "customPower": "Puissance (W)",
+    "customHours": "Heures/jour"
+  },
+  "backup": {
+    "title": "Durée de secours",
+    "grid_backup": "Combien de temps durent les pannes en général ?",
+    "off_grid": "Jours nuageux/pluvieux consécutifs à couvrir ?",
+    "grid_tou": "Heures de pointe par jour ?",
+    "hours": "heures"
+  },
+  "location": {
+    "title": "Où êtes-vous ?",
+    "subtitle": "Nous utiliserons les tarifs locaux pour des calculs précis.",
+    "selectCountry": "Sélectionnez votre pays",
+    "irradiance": "Ensoleillement",
+    "currency": "Devise",
+    "electricityPrice": "Prix de l'électricité",
+    "edit": "Modifier",
+    "useDefault": "Valeur par défaut",
+    "dataSource": "Données de référence. Modifiez pour votre tarif réel. Taux de change mis à jour toutes les heures.",
+    "perKwh": "/kWh"
+  },
+  "solar": {
+    "title": "Avez-vous des panneaux solaires ?",
+    "noSolar": "Non, pas encore",
+    "haveSolar": "Oui, j'ai des panneaux",
+    "existingCapacity": "Capacité solaire existante (kW)"
+  },
+  "bill": {
+    "title": "Facture mensuelle (optionnel)",
+    "subtitle": "Nous aide à calculer vos économies. Vous pouvez passer.",
+    "skip": "Passer",
+    "enter": "Votre facture mensuelle",
+    "currency": "USD"
+  },
+  "results": {
+    "title": "Votre système recommandé",
+    "byUser": "Pour",
+    "battery": "Stockage batterie",
+    "inverter": "Onduleur",
+    "solar": "Solaire PV",
+    "roi": "Retour sur investissement",
+    "usage": "Consommation",
+    "peakLoadNote": "Puissance de pointe :",
+    "installation": "Installation (estimation)",
+    "totalPrice": "Coût total du système",
+    "annualSavings": "Économies annuelles",
+    "paybackPeriod": "Temps de retour",
+    "year": "an",
+    "years": "ans",
+    "tenYearSavings": "Économies nettes sur 10 ans",
+    "billComparison": "Comparaison de facture",
+    "currentBill": "Facture actuelle/mois",
+    "afterBill": "Après solaire+batterie",
+    "seeProducts": "Voir produits de référence sur pack-e.com",
+    "getQuote": "Obtenir un devis",
+    "quotePlaceholder": "WhatsApp ou email",
+    "quoteButton": "Envoyez-moi le devis",
+    "quoteThanks": "Merci ! Nous vous contacterons bientôt."
+  },
+  "usage": {
+    "monthlyLabel": "Consommation mensuelle d'électricité",
+    "peakLabel": "Puissance de pointe — max simultanée (kW)",
+    "typical": "foyers typiques",
+    "needHelp": "Besoin d'aide ?",
+    "hideGuide": "Masquer le guide",
+    "guideTitle": "Puissance des appareils courants :",
+    "guideAC": "Climatiseur : 1-2 kW",
+    "guideHeater": "Chauffe-eau : 2 kW",
+    "guideCooktop": "Plaque induction : 2 kW",
+    "guideMicrowave": "Micro-ondes : 0,8 kW",
+    "guideFridge": "Réfrigérateur : 0,15 kW",
+    "guideWashing": "Machine à laver : 0,5 kW",
+    "guideExample": "Exemple : Clim + frigo + lumières = ~2,3 kW"
+  },
+  "footer": {
+    "disclaimer": "Estimations à titre indicatif. Vérifiez avec un installateur qualifié.",
+    "reference": "Référence :",
+    "visit": "pack-e.com"
+  }
+}

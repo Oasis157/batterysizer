@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "SolBatteryCalc",
+    "subtitle": "Home Energy Storage Calculator"
+  },
+  "wizard": {
+    "step": "Step",
+    "of": "of",
+    "next": "Next",
+    "back": "Back",
+    "calculate": "Calculate My System",
+    "calculateNew": "Calculate New System"
+  },
+  "scenario": {
+    "title": "What's your goal?",
+    "grid_backup": {
+      "title": "Grid Backup",
+      "desc": "Stay powered during outages. Battery covers essential loads when grid goes down."
+    },
+    "off_grid": {
+      "title": "Off-Grid Living",
+      "desc": "No grid connection or want full independence. Solar + battery for everything."
+    },
+    "grid_tou": {
+      "title": "Grid + Savings (Peak Shaving)",
+      "desc": "Lower your electricity bill. Battery charges during cheap hours, powers home during expensive hours."
+    }
+  },
+  "appliances": {
+    "title": "Select Your Appliances",
+    "subtitle": "Check the appliances you use. Adjust quantities and run hours as needed.",
+    "dailyUsage": "Daily Usage",
+    "monthlyUsage": "Monthly Usage",
+    "peakLoad": "Peak Load (all devices running simultaneously)",
+    "peakLoadTip": "This assumes all selected devices run at once. Your actual peak may be lower — consider which appliances you'd run simultaneously.",
+    "hours": "hours/day",
+    "quantity": "Qty",
+    "addCustom": "+ Custom Appliance",
+    "customName": "Appliance name",
+    "customPower": "Power (W)",
+    "customHours": "Hours/day"
+  },
+  "backup": {
+    "title": "Backup Duration",
+    "grid_backup": "How long do outages typically last?",
+    "off_grid": "Maximum consecutive cloudy/rainy days to cover?",
+    "grid_tou": "How many hours of peak electricity prices per day?",
+    "hours": "hours"
+  },
+  "location": {
+    "title": "Where are you?",
+    "subtitle": "We'll use local electricity rates and solar data for accurate calculations.",
+    "selectCountry": "Select your country",
+    "irradiance": "Solar irradiance",
+    "currency": "Currency",
+    "electricityPrice": "Electricity price",
+    "edit": "Edit",
+    "useDefault": "Use default",
+    "dataSource": "Reference data from public sources. Edit to match your actual tariff. Exchange rates update hourly.",
+    "perKwh": "/kWh"
+  },
+  "solar": {
+    "title": "Do you have solar panels?",
+    "noSolar": "No, I don't have solar (yet)",
+    "haveSolar": "Yes, I have solar panels",
+    "existingCapacity": "Your solar system power (kW)"
+  },
+  "bill": {
+    "title": "Monthly Electricity Bill (optional)",
+    "subtitle": "Helps us show your savings more accurately. You can skip this.",
+    "skip": "Skip — I'll estimate later",
+    "enter": "Enter your monthly bill",
+    "currency": "USD"
+  },
+  "results": {
+    "title": "Your Recommended System",
+    "byUser": "For",
+    "battery": "Battery Storage",
+    "inverter": "Inverter",
+    "solar": "Solar PV",
+    "roi": "Return on Investment",
+    "usage": "Energy Usage",
+    "peakLoadNote": "Peak load (all devices on):",
+    "installation": "Installation (estimated)",
+    "totalPrice": "Total System Cost",
+    "annualSavings": "Annual Savings",
+    "paybackPeriod": "Payback Period",
+    "year": "year",
+    "years": "years",
+    "tenYearSavings": "10-Year Net Savings",
+    "billComparison": "Bill Comparison",
+    "currentBill": "Current monthly bill",
+    "afterBill": "After solar+battery",
+    "seeProducts": "See reference products at pack-e.com",
+    "getQuote": "Get a Detailed Quote",
+    "quotePlaceholder": "Enter your WhatsApp or email",
+    "quoteButton": "Send Me the Quote",
+    "quoteThanks": "Thanks! We'll be in touch shortly."
+  },
+  "usage": {
+    "monthlyLabel": "Monthly electricity usage",
+    "peakLabel": "Peak load — max power at once (kW)",
+    "typical": "typical homes",
+    "needHelp": "Need help?",
+    "hideGuide": "Hide guide",
+    "guideTitle": "Common appliance peak loads:",
+    "guideAC": "AC unit: 1-2 kW",
+    "guideHeater": "Water heater: 2 kW",
+    "guideCooktop": "Induction cooktop: 2 kW",
+    "guideMicrowave": "Microwave: 0.8 kW",
+    "guideFridge": "Fridge: 0.15 kW",
+    "guideWashing": "Washing machine: 0.5 kW",
+    "guideExample": "Example: AC + fridge + lights = ~2.3 kW"
+  },
+  "footer": {
+    "disclaimer": "Estimates are for reference only. Actual system design should be verified by a qualified installer.",
+    "reference": "Reference:",
+    "visit": "pack-e.com"
+  }
+}
