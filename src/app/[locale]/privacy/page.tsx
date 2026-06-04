@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://solbatterycalc.com/${locale}/privacy`,
       languages: {
+        'x-default': 'https://solbatterycalc.com/en/privacy',
         en: 'https://solbatterycalc.com/en/privacy',
         fr: 'https://solbatterycalc.com/fr/privacy',
         es: 'https://solbatterycalc.com/es/privacy',

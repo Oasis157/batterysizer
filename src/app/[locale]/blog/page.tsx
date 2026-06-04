@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://solbatterycalc.com/${locale}/blog`,
       languages: {
+        'x-default': 'https://solbatterycalc.com/en/blog',
         en: 'https://solbatterycalc.com/en/blog',
         fr: 'https://solbatterycalc.com/fr/blog',
         es: 'https://solbatterycalc.com/es/blog',

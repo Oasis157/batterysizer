@@ -13,7 +13,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | SolBatteryCalc Blog`,
     description: post.description,
-    alternates: { canonical: `https://solbatterycalc.com/${locale}/blog/${slug}` },
+    alternates: {
+      canonical: `https://solbatterycalc.com/${locale}/blog/${slug}`,
+      languages: { en: `https://solbatterycalc.com/en/blog/${slug}` },
+    },
     openGraph: {
       title: post.title,
       description: post.description,

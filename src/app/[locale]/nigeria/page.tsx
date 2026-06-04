@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://solbatterycalc.com/${locale}/nigeria`,
       languages: {
+        'x-default': `https://solbatterycalc.com/en/nigeria`,
         en: `https://solbatterycalc.com/en/nigeria`,
         fr: `https://solbatterycalc.com/fr/nigeria`,
         es: `https://solbatterycalc.com/es/nigeria`,

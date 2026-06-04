@@ -17,7 +17,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     fr: 'Trouvez le bon système de batterie pour votre pays. Tarifs locaux, données solaires pour 20+ pays.',
     es: 'Encuentre el sistema de batería adecuado para su país. Tarifas locales, datos solares para 20+ países.',
   };
-  return { title: titles[locale] || titles.en, description: descs[locale] || descs.en };
+  return {
+    title: titles[locale] || titles.en,
+    description: descs[locale] || descs.en,
+    alternates: {
+      canonical: `https://solbatterycalc.com/${locale}/countries`,
+      languages: {
+        'x-default': 'https://solbatterycalc.com/en/countries',
+        en: 'https://solbatterycalc.com/en/countries',
+        fr: 'https://solbatterycalc.com/fr/countries',
+        es: 'https://solbatterycalc.com/es/countries',
+      },
+    },
+  };
 }
 
 const regionLabels: Record<string, Record<string, string>> = {

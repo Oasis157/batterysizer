@@ -86,9 +86,13 @@ export default function SiteHeader() {
 
         {/* Right side: locale switcher + hamburger */}
         <div className="flex items-center gap-2">
-          {/* Locale switcher */}
+          {/* Locale switcher — blog posts only exist in English, hide fr/es links */}
+          {(() => {
+            const isBlogPost = /^\/[a-z]{2}\/blog\/[^/]+/.test(currentPath);
+            const availableLocales = isBlogPost ? ['en'] : locales;
+            return (
           <div className="flex items-center gap-1 bg-[var(--bg)] rounded-full p-0.5 border border-[var(--border)]">
-            {locales.map(l => (
+            {availableLocales.map(l => (
               <a
                 key={l}
                 href={currentPath ? `/${l}${currentPath.replace(/^\/[a-z]{2}/, '')}` : `/${l}`}
@@ -102,6 +106,8 @@ export default function SiteHeader() {
               </a>
             ))}
           </div>
+          );
+          })()}
 
           {/* Hamburger button — mobile only */}
           <button

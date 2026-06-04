@@ -27,12 +27,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   alternates: {
     canonical: 'https://solbatterycalc.com',
-    languages: {
-      'x-default': 'https://solbatterycalc.com',
-      en: 'https://solbatterycalc.com/en',
-      fr: 'https://solbatterycalc.com/fr',
-      es: 'https://solbatterycalc.com/es',
-    },
   },
   other: {
     // 🔧 Replace with your actual verification codes from Google Search Console
