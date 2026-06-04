@@ -59,7 +59,7 @@ export default function SiteHeader() {
           href={`/${locale}`}
           className="flex items-center shrink-0"
         >
-          <img src="/logo.png" alt="SolBatteryCalc" className="h-10 sm:h-12 w-auto" />
+          <img src="/logo.png" alt="SolBatteryCalc" width={600} height={258} className="h-10 sm:h-12 w-auto" />
         </a>
 
         {/* Desktop nav */}

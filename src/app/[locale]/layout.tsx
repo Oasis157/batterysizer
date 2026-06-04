@@ -45,12 +45,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: descs[locale] || descs.en,
     alternates: {
       canonical: `https://solbatterycalc.com/${locale}`,
-      languages: {
-        'x-default': 'https://solbatterycalc.com',
-        en: 'https://solbatterycalc.com/en',
-        fr: 'https://solbatterycalc.com/fr',
-        es: 'https://solbatterycalc.com/es',
-      },
     },
     openGraph: {
       locale: locale === 'fr' ? 'fr_FR' : locale === 'es' ? 'es_ES' : 'en_US',
