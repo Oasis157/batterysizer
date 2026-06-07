@@ -2,11 +2,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Plus, Minus } from '@phosphor-icons/react';
-import { getGeneralFAQ } from '@/lib/data/faq';
+import { getGeneralFAQ, getCountryFAQ } from '@/lib/data/faq';
 
-export default function FAQSection({ locale }: { locale: string }) {
+export default function FAQSection({ locale, countryCode }: { locale: string; countryCode?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const faq = getGeneralFAQ(locale);
+  const faq = countryCode ? getCountryFAQ(countryCode, locale) || getGeneralFAQ(locale) : getGeneralFAQ(locale);
 
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 

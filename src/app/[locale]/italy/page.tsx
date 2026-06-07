@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '../../globals.css';
 import ItalyContent from './client';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import FAQSection from '@/components/FAQSection';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -54,6 +55,8 @@ export default async function ItalyPage({ params }: Props) {
           <p className="text-sm text-[var(--muted)] max-w-2xl">{c.subtitle}</p>
         </div>
         <ItalyContent />
+        <FAQSection locale={locale} countryCode="IT" />
+
         <div className="mt-12 text-center border-t border-[var(--border)] pt-8"><a href={`/${locale}`} className="text-xs text-[var(--primary)] hover:underline">&larr; Back to main calculator</a></div>
       </main>
     </div>
