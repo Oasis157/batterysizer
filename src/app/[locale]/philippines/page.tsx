@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Philippines Solar Battery Calculator – Typhoon Backup Power (2026)'
+  const title = locale === 'en' ? 'Philippines Solar Battery Calculator – Cut Bills 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Philippines – Secours Typhon (2026)'
     : 'Calculadora Batería Solar Filipinas – Respaldo para Tifones (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for the Philippines. Size your home system with local Meralco tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for the Philippines. Size your home system with local Meralco tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour les Philippines. Dimensionnez votre secours anti-typhon avec les tarifs Meralco.' : 'Calculadora gratuita de batería solar para Filipinas. Dimensiona tu respaldo anti-tifones con tarifas de Meralco.';
   return {
     title,
     description,

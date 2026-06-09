@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Brazil Solar Battery Calculator – Solar + Battery Savings (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Brésil – Économies Solaires (2026)' : 'Calculadora Batería Solar Brasil – Ahorro Solar (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Brazil. Size your home system with ANEEL tariffs and abundant solar data.' : '';
+  const title = locale === 'en' ? 'Brazil Solar Battery Calculator – Save on Bills (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Brésil – Économies Solaires (2026)' : 'Calculadora Batería Solar Brasil – Ahorro Solar (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Brazil. Size your home system with ANEEL tariffs and abundant solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Brésil. Dimensionnez votre système selon le Marco Legal da GD avec les tarifs ANEEL.' : 'Calculadora gratuita de batería solar para Brasil. Dimensiona tu sistema bajo el Marco Legal da GD con tarifas ANEEL.';
   return {
     title,
     description,

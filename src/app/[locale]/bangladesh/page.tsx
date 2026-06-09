@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Bangladesh Solar Battery Calculator – Solar Home System (2026)'
+  const title = locale === 'en' ? 'Bangladesh Solar Battery Calculator – Cut Costs 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Bangladesh – Système Solaire (2026)'
     : 'Calculadora de Batería Solar Bangladés | SolBatteryCalc';
-  const description = locale === 'en' ? 'Free solar battery calculator for Bangladesh. Size your home system with local electricity tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for Bangladesh. Size your home system with local electricity tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Bangladesh. Dimensionnez votre système pour les coupures quotidiennes avec les tarifs BPDB.' : 'Calculadora gratuita de batería solar para Bangladesh. Dimensiona tu sistema para apagones diarios con datos de tarifas BPDB.';
   return {
     title,
     description,

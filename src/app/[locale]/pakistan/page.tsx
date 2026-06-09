@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Pakistan Solar Battery Calculator – Beat Load Shedding (2026)'
+  const title = locale === 'en' ? 'Pakistan Solar Battery Calculator – Beat Outages 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Pakistan – Contre les Délestages (2026)'
     : 'Calculadora Batería Solar Pakistán – Combate los Cortes (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Pakistan. Size your home system with local electricity tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for Pakistan. Size your home system with local electricity tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Pakistan. Dimensionnez votre système pour battre 8-12h de coupures avec le net metering NEPRA.' : 'Calculadora gratuita de batería solar para Pakistán. Dimensiona tu sistema para superar 8-12h de apagones con net metering NEPRA.';
   return {
     title,
     description,

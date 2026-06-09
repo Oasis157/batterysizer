@@ -8,7 +8,7 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Spain Solar Battery Calculator – Maximize Self-Consumption (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Espagne – Autoconsommation (2026)' : 'Calculadora Batería Solar España – Maximiza el Autoconsumo (2026)';
+  const title = locale === 'en' ? 'Spain Solar Battery Calculator – Autoconsumo (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Espagne – Autoconsommation (2026)' : 'Calculadora Batería Solar España – Maximiza el Autoconsumo (2026)';
   const description = locale === 'en' ? 'Free solar battery calculator for Spain. Size your home system with local Iberdrola tariffs and 4.6 kWh/m² solar data.' : locale === 'fr' ? 'Calculateur de batterie solaire gratuit pour l\'Espagne. Dimensionnez votre système domestique avec les tarifs Iberdrola et un ensoleillement de 4,6 kWh/m²/jour.' : 'Calculadora gratuita de batería solar para España. Dimensiona tu sistema doméstico con las tarifas Iberdrola y datos solares de 4,6 kWh/m²/día.';
   return {
     title,

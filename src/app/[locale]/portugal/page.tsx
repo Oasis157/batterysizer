@@ -8,7 +8,7 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Portugal Solar Battery Calculator – Solar + Battery Savings (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Portugal – Économies Solaires (2026)' : 'Calculadora Batería Solar Portugal – Ahorro Solar (2026)';
+  const title = locale === 'en' ? 'Portugal Solar Battery Calculator – Solar Savings 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Portugal – Économies Solaires (2026)' : 'Calculadora Batería Solar Portugal – Ahorro Solar (2026)';
   const description = locale === 'en' ? 'Free solar battery calculator for Portugal. Size your home system with local EDP tariffs and 4.5 kWh/m² solar data.' : locale === 'fr' ? 'Calculateur de batterie solaire gratuit pour le Portugal. Dimensionnez votre système domestique avec les tarifs EDP et un ensoleillement de 4,5 kWh/m²/jour.' : 'Calculadora gratuita de batería solar para Portugal. Dimensiona tu sistema doméstico con las tarifas EDP y datos solares de 4,5 kWh/m²/día.';
   return {
     title,

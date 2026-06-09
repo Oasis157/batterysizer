@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Chile Solar Battery Calculator – Cut High Energy Costs (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Chili – Réduisez vos Coûts (2026)' : 'Calculadora Batería Solar Chile – Reduce Altos Costos (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Chile. Size your home system with local Ley de Generación Distribuida tariffs and solar data.' : '';
+  const title = locale === 'en' ? 'Chile Solar Battery Calculator – Save on Bills (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Chili – Réduisez vos Coûts (2026)' : 'Calculadora Batería Solar Chile – Reduce Altos Costos (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Chile. Size your home system with local Ley de Generación Distribuida tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Chili. Dimensionnez votre système avec le Net Billing (Ley 20.571) et un fort ensoleillement.' : 'Calculadora gratuita de batería solar para Chile. Dimensiona tu sistema con Net Billing (Ley 20.571) y alta irradiación solar.';
   return {
     title,
     description,

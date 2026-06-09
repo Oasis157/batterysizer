@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Indonesia Solar Battery Calculator – Reliable Home Power (2026)'
+  const title = locale === 'en' ? 'Indonesia Solar Battery Calculator – Backup Guide 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Indonésie – Énergie Fiable (2026)'
     : 'Calculadora Batería Solar Indonesia – Energía Confiable (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Indonesia. Size your home system with local PLN tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for Indonesia. Size your home system with local PLN tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour l\'Indonésie. Dimensionnez votre système de secours pour les coupures PLN avec les tarifs subventionnés.' : 'Calculadora gratuita de batería solar para Indonesia. Dimensiona tu sistema de respaldo para apagones PLN con tarifas subsidiadas.';
   return {
     title,
     description,

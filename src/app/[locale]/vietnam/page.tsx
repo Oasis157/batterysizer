@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Vietnam Solar Battery Calculator – Maximize Solar Savings (2026)'
+  const title = locale === 'en' ? 'Vietnam Solar Battery Calculator – DPPA Storage 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Vietnam – Maximisez vos Économies (2026)'
     : 'Calculadora Batería Solar Vietnam – Maximiza el Ahorro (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Vietnam. Size your home system with local EVN tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for Vietnam. Size your home system with local EVN tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Vietnam. Dimensionnez votre système avec les tarifs EVN et la politique d\'autoconsommation PDP8.' : 'Calculadora gratuita de batería solar para Vietnam. Dimensiona tu sistema con tarifas EVN y política solar de autoconsumo PDP8.';
   return {
     title,
     description,

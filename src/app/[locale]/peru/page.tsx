@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Peru Solar Battery Calculator – Grid Backup & Off-Grid (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Pérou – Secours & Hors-Réseau (2026)' : 'Calculadora Batería Solar Perú – Respaldo y Fuera de Red (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Peru. Size your home system with local electricity tariffs and solar data.' : '';
+  const title = locale === 'en' ? 'Peru Solar Battery Calculator – Off-Grid Power 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Pérou – Secours & Hors-Réseau (2026)' : 'Calculadora Batería Solar Perú – Respaldo y Fuera de Red (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Peru. Size your home system with local electricity tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Pérou. Dimensionnez votre système hors-réseau avec les tarifs locaux de Luz del Sur.' : 'Calculadora gratuita de batería solar para Perú. Dimensiona tu sistema fuera de red con tarifas locales de Luz del Sur.';
   return {
     title,
     description,

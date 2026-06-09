@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Canada Solar Battery Calculator – Winter Backup Power (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Canada – Secours Hivernal (2026)' : 'Calculadora Batería Solar Canadá – Respaldo Invernal (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Canada. Size your home system with local provincial electricity rates and solar data.' : '';
+  const title = locale === 'en' ? 'Canada Solar Battery Calculator – Winter Backup 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Canada – Secours Hivernal (2026)' : 'Calculadora Batería Solar Canadá – Respaldo Invernal (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Canada. Size your home system with local provincial electricity rates and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Canada. Dimensionnez votre système prêt pour l\'hiver avec le net metering provincial.' : 'Calculadora gratuita de batería solar para Canadá. Dimensiona tu sistema para invierno con datos de net metering provincial.';
   return {
     title,
     description,

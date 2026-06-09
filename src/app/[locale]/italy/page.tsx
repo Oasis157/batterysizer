@@ -8,7 +8,7 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Italy Solar Battery Calculator – High Electricity Cost Savings (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Italie – Économies Coûts Élevés (2026)' : 'Calculadora Batería Solar Italia – Ahorro en Altos Costos (2026)';
+  const title = locale === 'en' ? 'Italy Solar Battery Calculator – Cut Your Bills (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Italie – Économies Coûts Élevés (2026)' : 'Calculadora Batería Solar Italia – Ahorro en Altos Costos (2026)';
   const description = locale === 'en' ? 'Free solar battery calculator for Italy. Size your home system with local Enel tariffs and 4.3 kWh/m² solar data.' : locale === 'fr' ? 'Calculateur de batterie solaire gratuit pour l\'Italie. Dimensionnez votre système domestique avec les tarifs Enel et un ensoleillement de 4,3 kWh/m²/jour.' : 'Calculadora gratuita de batería solar para Italia. Dimensiona tu sistema doméstico con las tarifas Enel y datos solares de 4,3 kWh/m²/día.';
   return {
     title,

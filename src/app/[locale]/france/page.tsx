@@ -8,7 +8,7 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'France Solar Battery Calculator – Optimize Electricity Costs (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire France – Optimisez vos Coûts (2026)' : 'Calculadora Batería Solar Francia – Optimiza Costos (2026)';
+  const title = locale === 'en' ? 'France Solar Battery Calculator – Autoconsommation 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire France – Optimisez vos Coûts (2026)' : 'Calculadora Batería Solar Francia – Optimiza Costos (2026)';
   const description = locale === 'en' ? 'Free solar battery calculator for France. Size your home system with local EDF tariffs and 3.8 kWh/m² solar data.' : locale === 'fr' ? 'Calculateur de batterie solaire gratuit pour la France. Dimensionnez votre système domestique avec les tarifs EDF et un ensoleillement de 3,8 kWh/m²/jour.' : 'Calculadora gratuita de batería solar para Francia. Dimensiona tu sistema doméstico con las tarifas EDF y datos solares de 3,8 kWh/m²/día.';
   return {
     title,

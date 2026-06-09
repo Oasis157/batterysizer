@@ -9,7 +9,7 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const title = locale === 'en'
-    ? 'Ghana Solar Battery Calculator – Reliable Backup Power (2026)'
+    ? 'Ghana Solar Battery Calculator – Beat Dumsor (2026)'
     : locale === 'fr'
     ? 'Calculateur Batterie Solaire Ghana – Secours Fiable (2026)'
     : 'Calculadora Batería Solar Ghana – Respaldo Confiable (2026)';

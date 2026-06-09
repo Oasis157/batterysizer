@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'US Solar Battery Calculator – Backup & Net Metering (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire États-Unis – Secours & Net Metering (2026)' : 'Calculadora Batería Solar EE.UU. – Respaldo y Net Metering (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for the United States. Size your home backup system with net metering, federal tax credits, and local rates.' : '';
+  const title = locale === 'en' ? 'United States Solar Battery Calculator – Tax Credit 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire États-Unis – Secours & Net Metering (2026)' : 'Calculadora Batería Solar EE.UU. – Respaldo y Net Metering (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for the United States. Size your home backup system with net metering, federal tax credits, and local rates.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour les États-Unis. Dimensionnez votre système avec le crédit fédéral ITC 30%, les aides étatiques et les tarifs locaux.' : 'Calculadora gratuita de batería solar para Estados Unidos. Dimensiona tu sistema con crédito federal ITC 30%, reembolsos estatales y tarifas locales.';
   return {
     title,
     description,

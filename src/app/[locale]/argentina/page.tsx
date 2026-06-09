@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Argentina Solar Battery Calculator – Inflation-Proof Backup (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Argentine – Secours Anti-Inflation (2026)' : 'Calculadora Batería Solar Argentina – Respaldo Anti-Inflación (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Argentina. Size your home system with local Ley 27.424 tariffs and solar data.' : '';
+  const title = locale === 'en' ? 'Argentina Solar Battery Calculator – Costs & Backup 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Argentine – Secours Anti-Inflation (2026)' : 'Calculadora Batería Solar Argentina – Respaldo Anti-Inflación (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Argentina. Size your home system with local Ley 27.424 tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour l\'Argentine. Dimensionnez votre système avec les tarifs locaux et l\'ensoleillement argentin.' : 'Calculadora gratuita de batería solar para Argentina. Dimensiona tu sistema con las tarifas locales y datos solares de Argentina.';
   return {
     title,
     description,

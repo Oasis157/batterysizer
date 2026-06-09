@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Mexico Solar Battery Calculator – Lower Electricity Bills (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Mexique – Réduisez vos Factures (2026)' : 'Calculadora Batería Solar México – Reduce tu Recibo (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Mexico. Size your home system with CFE tariffs and excellent solar data.' : '';
+  const title = locale === 'en' ? 'Mexico Solar Battery Calculator – Beat DAC Tariffs 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Mexique – Réduisez vos Factures (2026)' : 'Calculadora Batería Solar México – Reduce tu Recibo (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Mexico. Size your home system with CFE tariffs and excellent solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Mexique. Dimensionnez votre système pour rester sous le seuil DAC de CFE avec les tarifs locaux.' : 'Calculadora gratuita de batería solar para México. Dimensiona tu sistema para mantenerte bajo el umbral DAC de CFE con tarifas locales.';
   return {
     title,
     description,

@@ -8,11 +8,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Sri Lanka Solar Battery Calculator – Backup for Power Cuts (2026)'
+  const title = locale === 'en' ? 'Sri Lanka Solar Battery Calculator – Cut Costs 2026'
     : locale === 'fr' ? 'Calculateur Batterie Solaire Sri Lanka – Secours Coupures (2026)'
     : 'Calculadora Batería Solar Sri Lanka – Respaldo Cortes (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Sri Lanka. Size your home system with local CEB tariffs and solar data.'
-    : '';
+  const description = locale === 'en' ? 'Free solar battery calculator for Sri Lanka. Size your home system with local CEB tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour le Sri Lanka. Dimensionnez votre système avec le net accounting CEB et un ensoleillement de 4,6 kWh/m².' : 'Calculadora gratuita de batería solar para Sri Lanka. Dimensiona tu sistema con net accounting CEB y datos solares de 4,6 kWh/m².';
   return {
     title,
     description,

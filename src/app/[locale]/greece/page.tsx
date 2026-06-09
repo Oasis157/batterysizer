@@ -8,7 +8,7 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Greece Solar Battery Calculator – Solar Backup for Homes (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Grèce – Secours Solaire (2026)' : 'Calculadora Batería Solar Grecia – Respaldo Solar (2026)';
+  const title = locale === 'en' ? 'Greece Solar Battery Calculator – Solar Savings 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Grèce – Secours Solaire (2026)' : 'Calculadora Batería Solar Grecia – Respaldo Solar (2026)';
   const description = locale === 'en' ? 'Free solar battery calculator for Greece. Size your home system with local PPC tariffs and 4.8 kWh/m² solar data.' : locale === 'fr' ? 'Calculateur de batterie solaire gratuit pour la Grèce. Dimensionnez votre système domestique avec les tarifs PPC et un ensoleillement de 4,8 kWh/m²/jour.' : 'Calculadora gratuita de batería solar para Grecia. Dimensiona tu sistema doméstico con las tarifas PPC y datos solares de 4,8 kWh/m²/día.';
   return {
     title,

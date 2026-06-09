@@ -8,8 +8,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const title = locale === 'en' ? 'Colombia Solar Battery Calculator – High Tariff Savings (2026)' : locale === 'fr' ? 'Calculateur Batterie Solaire Colombie – Économies Tarifs Élevés (2026)' : 'Calculadora Batería Solar Colombia – Ahorro en Tarifas Altas (2026)';
-  const description = locale === 'en' ? 'Free solar battery calculator for Colombia. Size your home system with local CREG tariffs and solar data.' : '';
+  const title = locale === 'en' ? 'Colombia Solar Battery Calculator – Cut Bills 2026' : locale === 'fr' ? 'Calculateur Batterie Solaire Colombie – Économies Tarifs Élevés (2026)' : 'Calculadora Batería Solar Colombia – Ahorro en Tarifas Altas (2026)';
+  const description = locale === 'en' ? 'Free solar battery calculator for Colombia. Size your home system with local CREG tariffs and solar data.' : locale === 'fr' ? 'Calculateur gratuit de batterie solaire pour la Colombie. Dimensionnez votre système selon la Resolución CREG 174 avec les tarifs par estrato.' : 'Calculadora gratuita de batería solar para Colombia. Dimensiona tu sistema bajo Resolución CREG 174 con tarifas por estrato.';
   return {
     title,
     description,
